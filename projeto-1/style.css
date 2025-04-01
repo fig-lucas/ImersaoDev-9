@@ -1,0 +1,107 @@
+/* Global Styles */
+@import url('https://fonts.googleapis.com/css2?family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap'); 
+
+*{
+  font-family: "Winky Sans", sans-serif;
+}
+
+body {
+    background-color: rgb(126, 122, 122);
+    margin: 0;
+    padding: 0;
+    color: white;
+    position: relative;
+  }
+  
+  /* Logo Styles */
+  .logo {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    max-width: 150px;
+    width: auto;
+  }
+  
+  /* Container with the background image */
+  .container {
+    background: url('https://tophinhanhdep.com/wp-content/uploads/2021/10/Minimalist-Sunset-Wallpapers.jpg') no-repeat center center/cover;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Content div for text and button */
+  .content {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px 40px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .content p{
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  .content #resultado{
+    border-radius: 16px;
+    font-weight: 700;
+  }
+  
+  .content .opcoes{
+    display: flex;
+    justify-content: center;
+   
+  }
+
+  .content label{
+    display: flex;
+    align-items: start;
+  }
+  
+
+
+  .content h2 {
+    margin-bottom: 20px;
+    font-size: 30px;
+    text-transform: uppercase;
+  }
+  
+  /* Button Styles */
+  button {
+    background-color: #ff1b7b;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 25px;
+    border-radius: 10px;
+  }
+  
+  button:hover {
+    background-color: #eea318;
+  }
+  
+  /* Footer Styles */
+  footer {
+    text-align: center;
+    padding: 10px;
+  }
+  
+
+  input, select{
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 5px;
+    outline: none;
+    border: 0;
+  }
+
+  select{
+    padding: 02px;
+  }
+  
