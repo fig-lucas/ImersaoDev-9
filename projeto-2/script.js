@@ -60,4 +60,6 @@ if (idade >= 18){
         alert("Digite um valor válido!")
         location.reload();
     }
+
+    //
 }
