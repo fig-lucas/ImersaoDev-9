@@ -1,65 +1,30 @@
-idade = prompt("Qual é a sua idade?")
+function jogar(){
+    let opcoes = ["Pedra", "Papel", "Tesoura"]
+    let escolhaJogador = document.querySelector('input[name="escolha"]:checked');
+    escolhaJogador = escolhaJogador.value;
 
-if (idade < 18){
-    alert("Você não pode jogar!");
-    location.reload();
-}
+    let escolhaPC = opcoes[Math.floor(Math.random() * opcoes.length)];
 
-if (idade >= 18){
-    escolha = prompt("Escolha: PEDRA [ 1 ]  PAPEL [ 2 ]  TESOURA [ 3 ]")
-    escolhaPC = Math.floor( Math.random() * 3 ) + 1;
+    let resultado = "";
 
-    //jogador pedra, PC pedra -> empate!
-    //jogador tesoura, PC tesoura -> empate!
-    //jogador papel, PC papel -> empate!
 
-    if (escolha == escolhaPC){
-        alert(`Empate!!  A escolha do PC foi ${escolhaPC}`)
+    if (escolhaJogador === escolhaPC){
+        resultado = `Empate! a escolha da máquina foi ${escolhaPC}`
+    }
+   
+    else if ((escolhaJogador === "Pedra" && escolhaPC === "Tesoura")|| (escolhaJogador === "Papel" && escolhaPC === "Pedra") ||
+    (escolhaJogador === "Tesoura" && escolhaPC === "Papel")){
+
+        resultado = `Voce venceu!! a escolha da máquina foi ${escolhaPC}`
     }
 
-    // jogador pedra, PC papel -> PC ganha!
-    // jogador pedra, PC tesoura -> Jogador ganha!
-
-    if(escolha == 1){
-        if(escolhaPC == 2){
-            alert(`O computador venceu!!  a escolha dele foi ${escolhaPC}`)
-        }
-
-        if(escolhaPC == 3){
-            alert(`Você venceu!!  a escolha dele foi ${escolhaPC}`)
-        }
+    else{
+        resultado = `Voce perdeu! a escolha da máquina foi ${escolhaPC}`
     }
 
-    // jogador papel, PC pedra -> jogador vence!
-    // jogador papel, PC tesoura -> pc vence!
 
-    if (escolha == 2){
-        if(escolhaPC == 1){
-            alert(`Você venceu!!  a escolha dele foi ${escolhaPC}`)
-        }
+        
+    document.getElementById("resultado").textContent = resultado
 
-        if (escolhaPC == 3){
-            alert(`O computador venceu!!  a escolha dele foi ${escolhaPC}`)
-        }
-    }
 
-    //jogador tesoura, PC pedra -> pc vence!
-    //jogador tesoura, PC papel -> jogador vence!
-
-    if (escolha == 3){
-        if (escolhaPC == 1){
-            alert(`O computador venceu!!  a escolha dele foi ${escolhaPC}`)
-        }
-
-        if (escolhaPC == 2){
-            alert(`Você venceu!!  a escolha dele foi ${escolhaPC}`)
-        }
-    }
-
-    if(escolha <= 0 || escolha > 3){
-        alert("Digite um valor válido!")
-        location.reload();
-    }
-
-    //
 }

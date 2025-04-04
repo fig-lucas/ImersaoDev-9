@@ -7,6 +7,8 @@ body {
     color: white;
     position: relative;
   }
+
+  
   
   /* Logo Styles */
   .logo {
@@ -19,7 +21,7 @@ body {
   
   /* Container with the background image */
   .container {
-    background: url('https://i.postimg.cc/TY28jTqJ/bg4-ia.jpg') no-repeat center center/cover;
+    background: url('https://seventrademkt.com.br/wp-content/uploads/2018/08/fundo-amarelo-2-comum.jpg') no-repeat center center/cover;
     min-height: 100vh;
     display: flex;
     justify-content: center;
@@ -27,14 +29,14 @@ body {
   }
   
   /* Content div for text and button */
-  .content {
+  .box {
     text-align: center;
     background-color: rgba(0, 0, 0, 0.5);
     padding: 20px 40px;
     border-radius: 8px;
   }
   
-  .content h2 {
+  .box h2 {
     margin-bottom: 20px;
   }
   

@@ -22,7 +22,7 @@ while (rodada<=3){
     }
 
     rodada = rodada + 1;
-3
+
     if(rodada>=4){
         venceu = true
     }
