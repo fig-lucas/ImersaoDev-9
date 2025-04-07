@@ -1,4 +1,6 @@
-let rodada = 1;
+function jogar(){
+
+    let rodada = 1;
 let venceu = false
 
 while (rodada<=3){
@@ -7,7 +9,8 @@ while (rodada<=3){
     escolha_jogador = parseFloat(prompt(`Nível ${rodada}, escolha um vidro (1,2 ou 3)?:  `));
     piso_quebrado = Math.floor(Math.random() * 3) + 1;
 
-    if(escolha_jogador <= 0 || escolha_jogador > 3){
+
+    if(escolha_jogador <= 0 || escolha_jogador > 3 || !escolha_jogador){
         alert("Digite um valor válido!")
         continue
     }
@@ -33,3 +36,5 @@ while (rodada<=3){
 if (venceu == true){
     alert("PARABÉNS VOCE GANHOU!!")
 }
+}
+

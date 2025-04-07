@@ -1,4 +1,21 @@
-personagens = ["", "",""]
+function verResultado(){
+    if (forcaPersonagem > forcaVilao){
+        alert(`Equipes: ${personagens} x ${viloes}`)
+        alert(`Sua equipe venceu!! sua forca foi ${forcaPersonagem} e do seu oponente ${forcaVilao}`)
+    }
+    else if (forcaPersonagem < forcaVilao){
+        alert(`Equipes: ${personagens} x ${viloes}`)
+        alert(`Sua equipe perdeu!! sua forca foi ${forcaPersonagem} e do seu oponente ${forcaVilao}`)
+    }
+    else{
+        alert(`Equipes: ${personagens} x ${viloes}`)
+        alert(`Empate!! sua forca foi ${forcaPersonagem} e do seu oponente ${forcaVilao}`)
+    }
+
+}
+
+
+/*personagens = ["", "",""]
 viloes = ["", "", ""]
 
 forcaPersonagem = 0
@@ -17,16 +34,5 @@ for(let i = 0; i < 3; i++){
     forcaVilao = Math.floor(Math.random() * 100);
 
 }
+*/
 
-if (forcaPersonagem > forcaVilao){
-    alert(`Equipes: ${personagens} x ${viloes}`)
-    alert(`Sua equipe venceu!! sua forca foi ${forcaPersonagem} e do seu oponente ${forcaVilao}`)
-}
-else if (forcaPersonagem < forcaVilao){
-    alert(`Equipes: ${personagens} x ${viloes}`)
-    alert(`Sua equipe perdeu!! sua forca foi ${forcaPersonagem} e do seu oponente ${forcaVilao}`)
-}
-else{
-    alert(`Equipes: ${personagens} x ${viloes}`)
-    alert(`Empate!! sua forca foi ${forcaPersonagem} e do seu oponente ${forcaVilao}`)
-}
